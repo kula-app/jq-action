@@ -1,0 +1,22 @@
+name: "JQ Action"
+description: "GitHub Action for working with JSON files"
+author: "philprime"
+inputs:
+  args:
+    description: "Command line arguments"
+    required: false
+  json:
+    description: "The JSON string"
+    required: false
+  json_file:
+    description: "Path to the file containing the JSON"
+    required: false
+outputs:
+  json_output:
+    description: "Output from executing jq"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "send"
+  color: "gray-dark"
