@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM kula:jq/latest
+FROM kula/jq:latest
 
 # Copy entrypoint
 COPY entrypoint.sh /entrypoint.sh
