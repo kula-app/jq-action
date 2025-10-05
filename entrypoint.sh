@@ -1,9 +1,7 @@
 #!/bin/sh
 
 # Add strict errors.
-set -eu
-set -o pipefail
-set -x
+set -eux
 
 # Run command
 echo "[debug] Testing if INPUT_JSON_FILE is set"
